@@ -1,0 +1,833 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+    
+
+.entry {
+  text-align: center;
+  position: relative;
+  min-height: 50em;
+  width: 100%;
+} 
+
+.entry div:before,
+.entry div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+  
+  
+
+  
+  
+  
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+@media all and (min-width: 960px) {
+  .entry {
+    float: left;
+    width: 100%;
+  }
+  .entry.wide {
+    width: 100%;
+  }
+  .entry.threes {
+    width: 33.333%;
+  }
+}
+
+body {
+	background: #000033;
+	font-size: 62.5%;
+}
+
+#scene-container {
+background: linear-gradient(to bottom right, #000033 0%, #000066 25%, #0000e6 50%, #000066 65%, #00004d 100%);
+overflow: hidden;
+}
+
+
+#dark-building div {
+
+background: #333333;
+height: 40em;
+margin-top: 12em;
+position: relative;
+width: 8em;
+z-index: 1;
+box-shadow: 6em 15em 0 0 #404040,
+			42em 10em 0 2em #404040,
+			25em 19em 0 2em #4d4d4d,
+			30.5em 12em 0 .8em #404040,
+			35em 5em 0 2em #333,
+			42em 0px 0 -1.6em #333,
+			52em 16em 0 0 #4d4d4d,
+			55em 20em 0 2em #404040,
+			50em 0px 0 1.5em #333,
+			19em 13em 0 0 #404040,
+			15em 13em 0 0 #4d4d4d, 
+			13.5em 10em 0 2em #4d4d4d,
+			19.5em 0px 0 .8em #333333;
+}
+
+#dark-building div:before {
+background: #333333;
+height: 40em;
+margin-left: 65em;
+width: 8em;
+z-index: 1;
+box-shadow: 6em 15em 0 0 #404040,
+			42em 10em 0 0 #404040,
+			25em 19em 0 0 #4d4d4d,
+			30.5em 12em 0 .8em #404040,
+			35em 5em 0 -1em #333,
+			42em 0px 0 -1.6em #333,
+			52em 16em 0 2em #4d4d4d,
+			55em 13em 0 0px #404040,
+			50em 0px 0 1.5em #333,
+			19em 13em 0 0 #404040,
+			15em 13em 0 0 #4d4d4d, 
+			13.5em 10em 0 2em #4d4d4d,
+			19.5em 0px 0 .8em #333333;
+
+}
+
+#dark-building div:after {
+background: #fff;
+height: 1em;
+margin-left: 1.4em;
+margin-top: 1.2em;
+width: 1em; 
+z-index: 4;
+box-shadow: 2em 0 0 0 #fff,
+			4em 0 0 0 #fff,
+			
+			0em 2em 0 0 #fff,
+			0em 4em 0 0 #fff,
+			0em 6em 0 0 #fff,
+			0em 8em 0 0 #fff,
+			
+			2em 2em 0 0 #fff,
+			2em 4em 0 0 #fff,
+			2em 6em 0 0 #fff,
+			2em 8em 0 0 #fff,
+			
+			4em 2em 0 0 #fff,
+			4em 4em 0 0 #fff,
+			4em 6em 0 0 #fff,
+			4em 8em 0 0 #fff,
+			
+			16em 10em 0 0 #fff,
+			18em 10em 0 0 #fff,
+			
+			12em 10em 0 0 #fff,
+			12em 12em 0 0 #fff,
+			
+			14em 10em 0 0 #fff,
+			14em 12em 0 0 #fff,
+			14em 14em 0 0 #fff,
+			14em 16em 0 0 #fff,
+			
+			16em 10em 0 0 #fff,
+			16em 12em 0 0 #fff,
+			
+			8em 20em 0 0 #fff,
+			8em 22em 0 0 #fff,
+			10em 22em 0 0 #fff,
+			
+			21em 14em 0 0 #fff,
+			23em 14em 0 0 #fff,
+			19em 16em 0 0 #fff,
+			
+			18.5em 0 0 0 #fff,
+			20.5em 0 0 0 #fff,
+			22.5em 0 0 0 #fff,
+			24.5em 0 0 0 #fff,
+			18.5em 2em 0 0 #fff,
+			20.5em 2em 0 0 #fff,
+			22.5em 4em 0 0 #fff,
+			24.5em 2em 0 0 #fff,
+			24.5em 6em 0 0 #fff,
+			22.5em 6em 0 0 #fff,
+			24.5em 8em 0 0 #fff,
+			
+			26.5em 20em 0 0 #fff,
+			26.5em 22em 0 0 #fff,
+			26.5em 24em 0 0 #fff,
+			26.5em 26em 0 0 #fff,
+			28.5em 22em 0 0 #fff,
+			28.5em 24em 0 0 #fff,
+			28.5em 26em 0 0 #fff,
+			30.5em 24em 0 0 #fff,
+			30.5em 26em 0 0 #fff,
+			
+			30.5em 12em 0 0 #fff,
+			32.5em 12em 0 0 #fff,
+			34.5em 12em 0 0 #fff,
+			
+			50em 0 0 0 #fff,
+			50em 2em 0 0 #fff,
+			50em 4em 0 0 #fff,
+			52em 2em 0 0 #fff,
+			54em 2em 0 0 #fff,
+			
+			65em 0 0 0 #fff,
+			67em 0 0 0 #fff,
+			69em 0 0 0 #fff,
+			
+			84em 0 0 0 #fff,
+			86em 0 0 0 #fff,
+			88em 0 0 0 #fff,
+			86em 2em 0 0 #fff,
+			86em 4em 0 0 #fff,
+			88em 4em 0 0 #fff,
+			
+			95em 12em 0 0 #fff,
+			97em 12em 0 0 #fff,
+			99em 12em 0 0 #fff,
+			
+			97em 14em 0 0 #fff,
+			
+			95em 16em 0 0 #fff,
+			97em 16em 0 0 #fff,
+			99em 16em 0 0 #fff,
+			
+			102em 6em 0 0 #fff,
+			
+			104em 16em 0 0 #fff,
+			
+			109em 2em 0 0 #fff,
+			109em 4em 0 0 #fff, 
+			
+			108em 14em 0 0 #fff,
+			110em 14em 0 0 #fff,
+			108em 16em 0 0 #fff,
+			110em 16em 0 0 #fff,
+			
+			114em -1em 0 0 #fff,
+			116em -1em 0 0 #fff,
+			118em -1em 0 0 #fff,
+			120em -1em 0 0 #fff,
+			
+			114em 1em 0 0 #fff,
+			116em 1em 0 0 #fff,
+			118em 1em 0 0 #fff,
+			120em 1em 0 0 #fff,
+			
+			114em 3em 0 0 #fff,
+			116em 3em 0 0 #fff,
+			118em 3em 0 0 #fff,
+			120em 3em 0 0 #fff,
+			
+			114em 5em 0 0 #fff,
+			116em 5em 0 0 #fff,
+			118em 5em 0 0 #fff,
+			120em 5em 0 0 #fff,
+			
+			115em 14em 0 0 #fff,
+			117em 14em 0 0 #fff,
+			119em 14em 0 0 #fff,
+			121em 14em 0 0 #fff,
+			
+			117em 16em 0 0 #fff,
+			119em 16em 0 0 #fff,
+			121em 16em 0 0 #fff,
+			
+			115em 18em 0 0 #fff,
+			117em 18em 0 0 #fff,
+			119em 18em 0 0 #fff,
+			
+			115em 20em 0 0 #fff,
+			117em 20em 0 0 #fff,
+			119em 20em 0 0 #fff,
+			121em 20em 0 0 #fff;
+}
+
+
+#moon div {
+
+background: transparent;
+border-radius: 50%;
+height: 25em;
+margin-left: 27em;
+margin-top: -42em;
+width: 25em;
+z-index: -1;
+box-shadow: 
+			-10em -20em 1em -12.1em #fff,
+			-10em -20em 0 -12.4em #fff,
+			-20em -15em 1em -12.1em #fff,
+			-20em -15em 0 -12.4em #fff,
+			-22em -10em 1em -12.1em #fff,
+			-22em -10em 0 -12.4em #fff,
+			-30em -21em 1em -12.1em #fff,
+			-30em -21em 0 -12.4em #fff,
+			-31em -11em 1em -12.1em #fff,
+			-31em -11em 0 -12.4em #fff,
+			-35em -19em 1em -12.1em #fff,
+			-35em -19em 0 -12.4em #fff,
+			3em -17em 1em -12.1em #fff,
+			3em -17em 0 -12.4em #fff,
+			12em -18em 1em -12.1em #fff,
+			12em -18em 0 -12.4em #fff,
+			15em -19em 1em -12.1em #fff,
+			15em -19em 0 -12.4em #fff;
+
+}
+
+#moon div:before {
+
+background: linear-gradient(to bottom left, #ffffff 0%, #ccffff 50%, #ffffff 100%);
+border-radius: 50%;
+height: 25em;
+
+margin-left: 52em;
+width: 25em;
+z-index: 0;
+box-shadow: 0 .2em 10em 1em #fff,
+			-10em -20em 1em -12.1em #fff,
+			-10em -20em 0 -12.4em #fff,
+			-20em -15em 1em -12.1em #fff,
+			-20em -15em 0 -12.4em #fff,
+			-22em -10em 1em -12.1em #fff,
+			-22em -10em 0 -12.4em #fff,
+			-30em -21em 1em -12.1em #fff,
+			-30em -21em 0 -12.4em #fff,
+			-31em -11em 1em -12.1em #fff,
+			-31em -11em 0 -12.4em #fff,
+			-35em -19em 1em -12.1em #fff,
+			-35em -19em 0 -12.4em #fff,
+			3em -17em 1em -12.1em #fff,
+			3em -17em 0 -12.4em #fff,
+			12em -18em 1em -12.1em #fff,
+			12em -18em 0 -12.4em #fff,
+			15em -19em 1em -12.1em #fff,
+			15em -19em 0 -12.4em #fff;
+
+}
+
+
+#title h1 {
+color: #fff;
+font-family: 'Bilbo Swash Caps', cursive;
+font-size: 7em;
+margin-top: -2em;
+text-shadow: 0 0 .4em #fff;
+position: relative;
+z-index: 3;
+}
+
+#title h2 {
+color: #fff;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 3em;
+margin-top: -2em;
+position: relative;
+z-index: 3;
+
+}
+
+#home h3, #author h3, #books h3 {
+color: #fff;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 3em;
+position: relative;
+z-index: 3;
+
+}
+
+#home h3 {
+margin-left: -26.5em;
+margin-top: -10em;
+}
+
+#books h3 {
+
+margin-left: -19em;
+margin-top: 2.7em;
+
+}
+
+#author h3 {
+
+margin-left: -5.8em;
+margin-top: -6.6em;
+
+}
+
+#reviews ul {
+
+list-style: none;
+
+}
+
+#reviews ul li {
+
+display: inline-block;
+color: #fff;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 2.2em;
+margin-top: 14em;
+padding-right: 1.7em;
+position: relative;
+z-index: 3;
+
+}
+
+#next-block {
+background: #fff;
+margin-left: 5%;
+margin-top: 55em;
+width:90%;
+height: auto;
+clear: both;
+
+}
+
+#next-block h1 {
+color: #000;
+font-family: 'Bilbo Swash Caps', cursive;
+font-size: 7em;
+text-shadow: 0 0 .4em #fff;
+text-align: center;
+padding-top: 2%;
+
+z-index: 3;
+}
+
+#next-block h3 {
+color: #000;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 3em;
+margin-top: -5%;
+text-align: center;
+text-shadow: 0 0 .4em #fff;
+z-index: 3;
+padding-bottom: 50%;
+
+}
+
+@media all and (max-width: 900px) {
+
+#reviews, #home, #author, #books {
+
+display: none;
+
+}
+
+}
+
+
+/***
+#dark-building div {
+
+background: #333333;
+height: 400px;
+margin-top: 120px;
+position: relative;
+width: 80px;
+z-index: 1;
+box-shadow: 60px 150px 0 0 #404040,
+			420px 100px 0 0 #404040,
+			250px 190px 0 0 #4d4d4d,
+			305px 120px 0 8px #404040,
+			350px 50px 0 -5px #333,
+			420px 0px 0 -16px #333,
+			520px 160px 0 0px #4d4d4d,
+			550px 130px 0 0px #404040,
+			500px 0px 0 15px #333,
+			190px 130px 0 0 #404040,
+			150px 130px 0 0 #4d4d4d, 
+			135px 100px 0 0 #4d4d4d,
+			195px 0px 0 8px #333333;
+}
+
+#dark-building div:before {
+background: #333333;
+height: 400px;
+margin-left: 650px;
+position: relative;
+width: 80px;
+z-index: 1;
+box-shadow: 60px 150px 0 0 #404040,
+			420px 100px 0 0 #404040,
+			250px 190px 0 0 #4d4d4d,
+			305px 120px 0 8px #404040,
+			350px 50px 0 -5px #333,
+			420px 0px 0 -16px #333,
+			520px 160px 0 0px #4d4d4d,
+			550px 130px 0 0px #404040,
+			500px 0px 0 15px #333,
+			190px 130px 0 0 #404040,
+			150px 130px 0 0 #4d4d4d, 
+			135px 100px 0 0 #4d4d4d,
+			195px 0px 0 8px #333333;
+
+}
+
+
+#moon div {
+
+background: transparent;
+border-radius: 50%;
+height: 250px;
+margin-left: 270px;
+margin-top: -420px;
+width: 250px;
+z-index: -1;
+box-shadow: 
+			-100px -200px 10px -121px #fff,
+			-100px -200px 0 -124px #fff,
+			-200px -150px 10px -121px #fff,
+			-200px -150px 0 -124px #fff,
+			-220px -100px 10px -121px #fff,
+			-220px -100px 0 -124px #fff,
+			-300px -210px 10px -121px #fff,
+			-300px -210px 0 -124px #fff,
+			-310px -110px 10px -121px #fff,
+			-310px -110px 0 -124px #fff,
+			-350px -190px 10px -121px #fff,
+			-350px -190px 0 -124px #fff,
+			30px -170px 10px -121px #fff,
+			30px -170px 0 -124px #fff,
+			120px -180px 10px -121px #fff,
+			120px -180px 0 -124px #fff,
+			150px -190px 10px -121px #fff,
+			150px -190px 0 -124px #fff;
+
+}
+
+#moon div:before {
+
+background: linear-gradient(to bottom left, #ffffff 0%, #ccffff 50%, #ffffff 100%);
+border-radius: 50%;
+height: 250px;
+
+margin-left: 520px;
+width: 250px;
+z-index: 0;
+box-shadow: 0px 2px 100px 10px #fff,
+			-100px -200px 10px -121px #fff,
+			-100px -200px 0 -124px #fff,
+			-200px -150px 10px -121px #fff,
+			-200px -150px 0 -124px #fff,
+			-220px -100px 10px -121px #fff,
+			-220px -100px 0 -124px #fff,
+			-300px -210px 10px -121px #fff,
+			-300px -210px 0 -124px #fff,
+			-310px -110px 10px -121px #fff,
+			-310px -110px 0 -124px #fff,
+			-350px -190px 10px -121px #fff,
+			-350px -190px 0 -124px #fff,
+			30px -170px 10px -121px #fff,
+			30px -170px 0 -124px #fff,
+			120px -180px 10px -121px #fff,
+			120px -180px 0 -124px #fff,
+			150px -190px 10px -121px #fff,
+			150px -190px 0 -124px #fff;
+
+}
+
+***/
+
+
+
+/**
+
+x-axis y-axis blur size
+
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
